@@ -2,7 +2,7 @@ const express = require('express');
 const fetch = require('node-fetch');
 
 const app = express();
-const port = 4000; // Use uma porta que não esteja em uso
+const port = 4000; 
 
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');

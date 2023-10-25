@@ -8,7 +8,6 @@ const server = http.createServer((req, res) => {
   const { url } = req;
 
   if (url === '/') {
-    // Servir o arquivo HTML
     const filePath = path.join(__dirname, 'index.html');
     fs.readFile(filePath, 'utf8', (err, data) => {
       if (err) {
@@ -20,7 +19,6 @@ const server = http.createServer((req, res) => {
       }
     });
   } else if (url === '/index.js') {
-    // Servir o arquivo index.js
     const filePath = path.join(__dirname, 'index.js');
     fs.readFile(filePath, 'utf8', (err, data) => {
       if (err) {
