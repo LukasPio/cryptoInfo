@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+p {
+    font-family: Roboto;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+h2 {
+    font-family: Roboto;
+    font-size: 35px;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.full-container {
+    display: flex;
+    justify-content: center;
+}
+
+.crypto-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    border: 1px solid #000;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    padding-bottom: 60px;
+    background-color: #ede6e6;
+}
+
+.oneImg {
+    width: 140px;
+    height: 14  0px;
+    border-radius: 20%;
+}
+
+.crypto-info:hover {
+    scale: 1.1;
+    transition: 0.6s;
+}
+
+body {
+    background-color: #dfd7d7;
+}
